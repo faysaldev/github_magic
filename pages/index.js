@@ -1,8 +1,13 @@
 import Image from "next/image";
+import { useRouter } from "next/router";
+import { useState } from "react";
 
 export default function Home() {
-  const SubmitUsername = () => {
+  const [input, setInput] = useState("");
+  const router = useRouter();
+  const SubmitUsername = (e) => {
     e.preventDefault();
+    router.push(`/templete/${input}`);
   };
 
   return (
@@ -30,6 +35,8 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row justify-center items-center my-5">
                 <input
                   type="text"
+                  value={input}
+                  onChange={(e) => setInput(e.target.value)}
                   placeholder="GitHub Username"
                   className="text-gray bg-[#3B3B3B] text-xl font-mono text-center my-5 rounded-xl sm:w-2/3 px-3 py-[.7em] sm:rounded-l-xl sm:rounded-r-none"
                 />
