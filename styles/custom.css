@@ -1,0 +1,31 @@
+.colorfulText {
+    background: -webkit-linear-gradient(right, #ff8867df, #ff52ffc6);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.colorfulText2 {
+    background: -webkit-linear-gradient(left, #f0ee5a, #d868d8bb);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.colorfulText3 {
+    background: -webkit-linear-gradient(right, #5ec985b5, #b348ffbb);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.colorfulText4 {
+    background: -webkit-linear-gradient(right, #4cdbffb5, #e031dac6);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.customMenuOpen {
+    display: none;
+}
