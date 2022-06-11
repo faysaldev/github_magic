@@ -36,3 +36,21 @@
 .yellowtail, .SpaceGroteskRegular {
 font-family: 'Yellowtail', cursive;
 }
+
+.userImage {
+    animation: animate 1.5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(-15px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-15px);
+    }
+}
