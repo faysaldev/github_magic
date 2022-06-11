@@ -21,7 +21,7 @@ const Protfolio1 = ({ userData, ReadmeData, ReposData }) => {
         <TempBanner1 user={userData} />
         <TempAbout data={ReadmeData} />
         <MyProject repos={ReposData} />
-        <TempFooter />
+        <TempFooter user={userData} />
       </div>
     </div>
   );

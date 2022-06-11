@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+
 .colorfulText {
     background: -webkit-linear-gradient(right, #ff8867df, #ff52ffc6);
     background-clip: border-box;
@@ -28,4 +32,7 @@
 
 .customMenuOpen {
     display: none;
+}
+.yellowtail, .SpaceGroteskRegular {
+font-family: 'Yellowtail', cursive;
 }

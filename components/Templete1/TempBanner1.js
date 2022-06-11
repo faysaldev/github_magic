@@ -7,7 +7,9 @@ function TempBanner1({ user }) {
     <div>
       <div className="flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between container max-auto">
         <div className="flex flex-col justify-center p-6 text-center lg:text-left">
-          <p className="font-mono text-[#FC4370]">Welcome, I m 👉</p>
+          <p className="font-mono text-[#FC4370] pt-12 md:pt-4">
+            Welcome, I m 👉
+          </p>
           <div className="my-[.7rem] ">
             <div className="text-5xl font-bold sm:text-7xl">
               <TypeAnimation
@@ -18,7 +20,9 @@ function TempBanner1({ user }) {
               />
             </div>
           </div>
-          <div className="my-[1rem] text-gray-400 max-w-md">{user?.bio}</div>
+          <div className="my-[1rem] text-gray-400 mx-auto lg:mx-0 max-w-md text-center lg:text-left">
+            {user?.bio}
+          </div>
           {/* button */}
           <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
             <a
