@@ -9,14 +9,14 @@ const Name = () => {
     {
       id: 1,
       name: "Templete 1",
+      image: "https://i.ibb.co/5YYMWzK/Screenshot-14.pngs",
       link: `/templete/protfolio1/${router.query?.name}`,
-      image: "https://i.ibb.co/BBWdp9H/template1-x0eqp8.jpg",
     },
     {
       id: 2,
       name: "Templete 2",
       link: `/templete/protfolio2/${router.query?.name}`,
-      image: "https://i.ibb.co/dmdvDyM/template-8-min-x2ynj2.jpg",
+      image: "https://i.ibb.co/qjNn8Vb/Screenshot-12.png",
     },
   ];
 

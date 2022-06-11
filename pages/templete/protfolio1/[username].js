@@ -9,10 +9,6 @@ import Temple1Header from "../../../components/Templete1/Temple1Header";
 const Protfolio1 = ({ userData, ReadmeData, ReposData }) => {
   const router = useRouter();
 
-  console.log(userData);
-  console.log(ReadmeData);
-  console.log(ReposData);
-
   return (
     <div className="bg-black text-white w-full min-h-screen overflow-x-hidden">
       {/* TODO: home page content wrapper */}
@@ -31,7 +27,7 @@ export default Protfolio1;
 
 export async function getServerSideProps(context) {
   const readmedata = await fetch(
-    "https://raw.githubusercontent.com/devsahinur/devsahinur/main/README.md"
+    `https://raw.githubusercontent.com/${context?.query?.username}/${context?.query?.username}/main/README.md`
   ).then((response) => response.text());
 
   // another two one

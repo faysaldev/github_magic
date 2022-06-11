@@ -2,9 +2,8 @@ import React from "react";
 import SingleProjectCard from "./SingleProjectCard";
 
 const MyProject = ({ repos }) => {
-  console.log(repos);
   return (
-    <section id="work" className="w-full mx-auto">
+    <section id="work" className="w-full lg:w-[80%] mx-auto">
       <h2 className="text-5xl font-mono font-semibold text-start px-10 py-10">
         My Projects
       </h2>

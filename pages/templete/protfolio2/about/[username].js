@@ -4,6 +4,7 @@ import BottomNavigation from "../../../../components/Templete2/BottomNavigation"
 import Temp2Header from "../../../../components/Templete2/Temp2Header";
 import Markdown from "markdown-to-jsx";
 import { useRouter } from "next/router";
+import ReactMarkdown from "react-markdown";
 
 const Projects = ({ userData, ReadmeData }) => {
   const router = useRouter();
@@ -39,6 +40,7 @@ const Projects = ({ userData, ReadmeData }) => {
         {/* mardown to jsx */}
         <div className="SpaceGroteskRegular text-[20px] sm:text-[24px] max-w-5xl mt-3">
           <Markdown>{ReadmeData}</Markdown>
+          {/* <ReactMarkdown>{ReadmeData}</ReactMarkdown> */}
         </div>
       </div>
 
@@ -52,7 +54,7 @@ export default Projects;
 
 export async function getServerSideProps(context) {
   const readmedata = await fetch(
-    "https://raw.githubusercontent.com/devsahinur/devsahinur/main/README.md"
+    `https://raw.githubusercontent.com/${context?.query?.username}/${context?.query?.username}/main/README.md`
   ).then((response) => response.text());
 
   const userData = await fetch(

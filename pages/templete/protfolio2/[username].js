@@ -12,8 +12,6 @@ import TypeAnimation from "react-type-animation";
 const Protfolio2 = ({ userData }) => {
   const router = useRouter();
 
-  console.log(userData);
-
   return (
     <div className="overflow-x-hidden bg-white dark:bg-gradient-to-r dark:from-[#1F2937] dark:to-[#111827] min-h-[109vh] w-full relative text-gray-600 dark:text-white ">
       <Temp2Header name={userData?.name} />
